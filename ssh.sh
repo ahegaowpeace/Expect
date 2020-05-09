@@ -9,5 +9,6 @@ set timeout 5
 spawn env LANG=C /usr/bin/ssh ${TAR}
 expect \"password:\"
 send \"${PW}\n\"
+# プロセス制御をユーザに渡す
 interact
 "
